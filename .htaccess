@@ -1,0 +1,21 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^assets/(.*) /wp-content/themes/share-V1/assets/$1 [QSA,L]
+RewriteRule ^plugins/(.*) /wp-content/plugins/$1 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+AddType video/ogg   .ogv
+AddType video/mp4   .mp4
+AddType video/x-m4v   .m4v
+AddType video/mov   .mov
+AddType video/webm  .webm
+

@@ -1,0 +1,225 @@
+/* M&C SAATCHI*/
+
+/* HEX COLORS 
+
+Mustard #bfcf34
+Blue    #7ccbc8
+Green   #54a446
+OffWhite #f6f6f6
+Black   #000000
+
+*/
+
+
+@import url(kickstart-buttons.css);
+@import url(kickstart-forms.css);
+@import url(kickstart-menus.css);
+@import url(kickstart-grid.css);
+@import url(jquery.fancybox-1.3.4.css);
+@import url(kickstart-slideshow.css);
+@import url(prettify.css);
+@import url(tiptip.css);
+@import url(animate-custom.css);
+
+
+
+#about_mobile {display: none;}
+
+#logo {
+margin: 0;
+padding: 5px 0;
+position: relative;
+max-width: 100%;
+z-index: 6;
+}
+
+nav ul li	{ display: inline; padding: 5px;
+	}
+a { color: #FFF; text-decoration: none;}
+a:hover { color: #7ccbc8; text-decoration: none; font-size: 1em;}	
+
+h1,h2 {
+display: block;
+font-size: 2em;
+-webkit-margin-before: 0.67em;
+-webkit-margin-after: 0.67em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;
+}
+h2.white { 
+color: #fff;
+padding-bottom: 20px;
+background: url('../img/title-bg1-w.png') no-repeat center bottom;
+text-align: center;
+}
+
+.animations {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+overflow: hidden;
+z-index: -100;
+}
+.animations .video_show.main-vid {
+z-index: -500;
+}
+
+#about, #about_mobile, #work, #blog, #contact { width: 100%; z-index: -; padding: 10px; display:block;}
+#about, #about_mobile { background-color: #7ccbc8; min-height: 500px; }
+#work	{ background-color: #54a446;}
+#blog	{ background-color: #bfcf34; height: 950px; margin-bottom:100px;}
+#contact {  height:509px; margin-top: 20px;}
+.contact_bg { background: #7ccbc8; width:33%; display: block; float: right ; padding: 10px; margin-right:50px;}
+
+/*ARROWBOX*/
+.arrow_box_about {position: relative;background: #7ccbc8;}
+.arrow_box_about:after {top: 100%;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;}
+.arrow_box_about:after {border-color: rgba(136, 183, 213, 0);border-top-color: #7ccbc8;border-width: 50px;left: 10%;margin-left: -100px;z-index:1;}
+.arrow_box_work {position: relative;background: #54a446;}
+.arrow_box_work:after {top: 100%;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;}
+.arrow_box_work:after {border-color: rgba(136, 183, 213, 0);border-top-color: #54a446;border-width: 50px;left: 10%;margin-left: -100px;z-index:1;}
+.arrow_box_blog {position: relative;background: #bfcf34;}
+.arrow_box_blog:after {top: 100%;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;}
+.arrow_box_blog:after {border-color: rgba(136, 183, 213, 0);border-top-color: #bfcf34;border-width: 100px;left: 10%;margin-left: -100px;z-index:1;}
+
+.company-title { display: block;
+font-size: 2em;
+-webkit-margin-before: 0.67em;
+-webkit-margin-after: 0.67em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold; 
+}
+
+#push	{ height: 190px; }
+
+.address{ font-size:1.6em;}
+.phone	{ text-decoration: italic;}
+
+footer 	{ background: black ; padding-top: 10px; color: white; width: 102%;}
+footer a { color: #54a446; display: block;}
+footer a:hover { color: #bfcf34;}
+.social-icons	{ float: right; height: 32px; width: 166px; margin: 5px 0px 0px 0px;}
+.social-icons ul li { width: 32px; height: 32px; float: left; margin: 5px; }
+.social-icons a:hover	{background-color:#54a446;}
+/*SQUARE*/
+.truelogo { float:left; margin-left: 100px;}
+.square1,.square2,.square3 { height: 150px; width: 150px;   display:block;
+	transform:rotate(140deg); 
+	-moz-transform:rotate(140deg); 
+	-webkit-transform:rotate(140deg);
+	-o-transform:rotate(140deg);
+	-ms-transform:rotate(140deg);
+	}
+	
+.square1 { position:relative; top:0px; left:50px; background-color: #bfcf34;}
+.square2 { position:relative; top:-35px; left:146px; background-color: #54a446;}
+.square3 { position:relative; top:-89px; left:31px; background-color: #7ccbc8;}
+
+
+
+
+
+/* Responsive CSS Styles Table of Contents */
+
+@media only screen and (min-width: 1170px){}
+@media only screen and (min-width: 1000px) and (max-width: 1169px){
+
+.container {
+	width: 93.75%; margin: 0px auto -180px; min-height: 100%; height: auto !important; height: 100%;
+}
+
+nav .main_nav  {
+display: block;
+height: 70px;
+line-height: 70px;
+vertical-align: middle;
+margin: 0px 0px;
+text-decoration: none;
+font-size: 1.5em;
+padding: 0 20px;
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+text-transform: uppercase;
+}
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 999px){
+
+.container {
+	width: 100%;
+	margin: auto auto auto auto;
+}
+}
+#about { display: block; min-height:560px;}
+#about_mobile {display: none;}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+
+.container {
+	width: 100%;
+	margin: auto auto auto auto;
+}
+
+.logo {
+	margin: 10px 0px 0px 0px;
+	width: 100%;
+	text-align: center;
+	background: url(../images/logo.jpg) no-repeat center 20px;
+}
+
+nav .main_nav  {
+line-height: 20px;
+vertical-align: middle;
+margin: auto auto auto auto;
+text-decoration: none;
+font-size: 1em;
+padding: 0 10px;
+text-align: center;
+
+}
+
+#about_mobile {display: block; min-height: 590px;}
+#about { display: none;}
+.contact_bg { width:76%;}
+
+}
+
+
+@media only screen and (max-width: 479px){
+
+h1 {
+	font-size: 1.4em;
+}
+
+h2 { 
+	font-size: 1.2em;
+}
+
+.container {
+	width: 100%;
+	margin: auto auto auto auto;
+}
+#about, #about_mobile, #work, #blog, #contact { width: 100%; z-index: 0; padding: 10px;margin-bottom: 1px;  display:block;}
+#about_mobile {display: block; height:657px; }
+#about { display: none;}
+#blog	{ display: none;}
+#work{margin-bottom:100px;}
+.contact_bg { width:76%;}
+
+.logo {
+	margin: 10px 0px 0px 0px;
+	width: 100%;
+	text-align: center;
+	background: url(../images/logo.jpg) no-repeat center 20px;
+}
+
